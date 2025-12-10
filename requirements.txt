@@ -1,3 +1,14 @@
+# modern build tools to avoid legacy setup.py failures
+pip>=23.0
+setuptools>=58.0.0
+wheel
+packaging
+pyparsing
+
+# production WSGI server
+gunicorn==20.1.0
+
+# App dependencies (original Udacity pins kept, adjusted to avoid forcing ancient pip/setuptools)
 alembic==1.4.0
 azure-common==1.1.24
 azure-nspkg==3.0.2
@@ -18,16 +29,16 @@ Jinja2==3.0.1
 Mako==1.1.1
 MarkupSafe==2.0.1
 msal==1.13.0
-pip==10.0.1
 pycparser==2.20
 pyodbc==5.2.0
 pyopenssl==19.1.0
 python-dateutil==2.8.1
 python-editor==1.0.4
 requests==2.22.0
-setuptools==39.0.1
 six==1.14.0
 SQLAlchemy==1.3.13
 urllib3==1.25.8
 Werkzeug==2.0.3
 WTForms==2.2.1
+cachelib
+PyJWT[crypto]<3,>=1.0.0
